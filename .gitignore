@@ -1,0 +1,49 @@
+# Node dependencies
+node_modules/
+
+# pnpm / npm debug
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Next.js
+.next/
+out/
+build/
+.next/cache/
+
+# Environment
+.env.local
+.env.*.local
+.env
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Caches
+.cache/
+.parcel-cache/
+.sass-cache/
+
+# Vercel
+.vercel/
+
+# Local Netlify folder
+.netlify

@@ -1,0 +1,56 @@
+import type { PricingPlan } from "@/types"
+
+export const pricingPlans: PricingPlan[] = [
+  {
+    id: "starter",
+    name: "Starter",
+    description: "Perfect for small teams getting started with monitoring.",
+    price: "$299",
+    period: "/month",
+    features: [
+      "Up to 50 hosts",
+      "7-day data retention",
+      "Basic alerting",
+      "Email support",
+      "Standard dashboards",
+      "API access",
+    ],
+    cta: "Start Free Trial",
+  },
+  {
+    id: "professional",
+    name: "Professional",
+    description: "For growing teams that need advanced features.",
+    price: "$799",
+    period: "/month",
+    features: [
+      "Up to 250 hosts",
+      "30-day data retention",
+      "Advanced alerting & ML",
+      "Priority support",
+      "Custom dashboards",
+      "SSO & RBAC",
+      "Compliance reports",
+    ],
+    highlighted: true,
+    cta: "Start Free Trial",
+  },
+  {
+    id: "enterprise",
+    name: "Enterprise",
+    description: "Custom solutions for large organizations.",
+    price: "Custom",
+    period: "",
+    features: [
+      "Unlimited hosts",
+      "Custom data retention",
+      "AI-powered insights",
+      "Dedicated support",
+      "White-label options",
+      "On-premise deployment",
+      "Custom integrations",
+      "SLA guarantees",
+    ],
+    cta: "Contact Sales",
+  },
+]
