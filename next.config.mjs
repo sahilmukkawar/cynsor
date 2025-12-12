@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  reactStrictMode: true,
   images: {
     unoptimized: true,
   },
- 
+  poweredByHeader: false,
+  compress: true,
+  generateEtags: true,
 }
 
 export default nextConfig

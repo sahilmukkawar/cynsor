@@ -1,0 +1,15 @@
+.git
+.gitignore
+node_modules
+npm-debug.log
+yarn-error.log
+.next
+.vercel
+.env.local
+.env.*.local
+*.md
+!README.md
+.eslintcache
+.turbo
+dist
+coverage
