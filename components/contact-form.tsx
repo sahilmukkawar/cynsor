@@ -12,14 +12,12 @@ import { CheckIcon, ArrowRightIcon } from "@/components/ui/icons"
 interface FormErrors {
   name?: string
   email?: string
-  phone?: string
   message?: string
 }
 
 interface SimpleContactFormData {
   name: string
   email: string
-  phone: string
   message: string
 }
 
@@ -27,7 +25,6 @@ export function ContactForm() {
   const [formData, setFormData] = useState<SimpleContactFormData>({
     name: "",
     email: "",
-    phone: "",
     message: "",
   })
   const [errors, setErrors] = useState<FormErrors>({})
@@ -87,13 +84,12 @@ export function ContactForm() {
         </div>
         <h3 className="text-2xl font-bold mb-2 text-foreground">Message Sent!</h3>
         <p className="text-muted-foreground mb-6">
-          Thanks for reaching out, {formData.name.split(" ")[0]}! Our security experts will get back to you within 24
-          hours.
+          Thanks for reaching out, {formData.name.split(" ")[0]}! Our security experts will get back to you within 24 hours via email.
         </p>
         <Button
           onClick={() => {
             setIsSuccess(false)
-            setFormData({ name: "", email: "", phone: "", message: "" })
+            setFormData({ name: "", email: "", message: "" })
           }}
         >
           Send Another Message
@@ -134,18 +130,6 @@ export function ContactForm() {
           {errors.email && <p className="text-xs text-destructive">{errors.email}</p>}
         </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="phone" className="text-foreground">
-            Phone Number
-          </Label>
-          <Input
-            id="phone"
-            type="tel"
-            placeholder="+1 (555) 123-4567"
-            value={formData.phone}
-            onChange={(e) => handleChange("phone", e.target.value)}
-          />
-        </div>
 
         <div className="space-y-2">
           <Label htmlFor="message" className="text-foreground">

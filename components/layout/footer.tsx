@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { footerLinks } from "@/data/navigation"
-import { LinkedInIcon, TwitterIcon, GitHubIcon, YoutubeIcon, PhoneIcon } from "@/components/ui/icons"
+import { LinkedInIcon, TwitterIcon, GitHubIcon, YoutubeIcon, MailIcon } from "@/components/ui/icons"
 
 export function Footer() {
   return (
@@ -17,8 +17,8 @@ export function Footer() {
               Comprehensive enterprise-grade security for startups and SMBs, powered by AI.
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
-              <PhoneIcon className="w-4 h-4" />
-              <span>+(888) 695-9859</span>
+              <MailIcon className="w-4 h-4" />
+              <a href="mailto:contact@cynsor.com" className="hover:underline">contact@cynsor.com</a>
             </div>
             <div className="flex items-center gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">

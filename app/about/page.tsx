@@ -103,9 +103,9 @@ export default function AboutPage() {
               Why <span className="gradient-text">Cynsor?</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Cynsor is a cyber security company based in Pune, India. Our methods and services are backed by experts to
-              seamlessly integrate security into your existing business processes.
+              Complete advisory support — Cynsor is a cyber security company based in Pune, India. Our methods and services are backed by experts to seamlessly integrate security into your existing business processes and technology, ensuring effective defense without disrupting operations.
             </p>
+            <p className="mt-4 text-lg text-primary font-semibold">Enroll Now: <a href="mailto:contact@cynsor.com" className="underline">contact@cynsor.com</a></p>
           </div>
         </div>
       </section>
@@ -114,24 +114,19 @@ export default function AboutPage() {
       <SectionWrapper muted>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-foreground">Our Mission</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-foreground">Mission, Vision &amp; Goal</h2>
             <div className="space-y-4 text-muted-foreground">
-              <p>
-                We started Cynsor with a simple belief: every organization, regardless of size, deserves
-                enterprise-grade security protection. Too many startups and SMBs struggle with cyber threats because
-                enterprise solutions are too expensive and complex.
-              </p>
-              <p>
-                Our team of DoD-trained professionals combines military-grade security expertise with cutting-edge AI to
-                deliver comprehensive protection that&apos;s affordable, effective, and easy to implement.
-              </p>
-              <p>
-                Through our services, we empower you to focus on what you do best, knowing that your digital walls are
-                built to withstand even the most sophisticated threats.
-              </p>
+              <h3 className="text-lg font-semibold">Mission</h3>
+              <p>To excel in software development, embody industry-leading professionalism, and drive progress through relentless innovation and boundary-pushing solutions.</p>
+
+              <h3 className="text-lg font-semibold">Vision</h3>
+              <p>To be the unrivaled leader in Cyber Security development, inspiring the future of AI powered cyber security with groundbreaking advancements and transformative applications.</p>
+
+              <h3 className="text-lg font-semibold">Goal</h3>
+              <p>Empowering our customers to confidently pursue their dreams in a protected digital world, nurtured by our relentless security innovations.</p>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative space-y-6">
             <div className="bg-white rounded-2xl p-8 border border-border shadow-sm">
               <h4 className="font-semibold mb-4 text-foreground">What Sets Us Apart</h4>
               <ul className="space-y-3">
@@ -145,7 +140,16 @@ export default function AboutPage() {
                 ))}
               </ul>
             </div>
-          </div>
+
+            <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-6 border border-primary/20">
+              <h4 className="font-semibold mb-3 text-foreground">Our Security Model</h4>
+              <p className="text-sm text-muted-foreground mb-2">We take a proactive approach to cybersecurity inspired by NIST 800-137 continuous monitoring. We use AI and Machine Learning to detect and neutralize threats, perform real-time risk assessments, and apply targeted security controls. Weekly on-demand status reports keep you informed.</p>
+              <div className="flex gap-3 mt-3">
+                <div className="bg-white/5 rounded-md p-2 text-sm font-medium">Real-time Threat Detection</div>
+                <div className="bg-white/5 rounded-md p-2 text-sm font-medium">Automated Threat Response</div>
+              </div>
+            </div>
+          </div> 
         </div>
       </SectionWrapper>
 
@@ -162,8 +166,26 @@ export default function AboutPage() {
         </div>
       </SectionWrapper>
 
+      {/* Methodology & Culture */}
+      <SectionWrapper>
+        <SectionTitle title="Our Methodology" subtitle="Pushing the frontiers of security with innovation" />
+        <div className="grid md:grid-cols-2 gap-6">
+          <GlassCard>
+            <h3 className="text-lg font-semibold mb-2 text-foreground">Our Approach</h3>
+            <p className="text-sm text-muted-foreground mb-3">Our team of passionate security experts doesn’t settle for the ordinary. They build cutting-edge analytical models and machine learning algorithms that power revolutionary processes. We continuously experiment and refine for speed, transparency, and effectiveness.</p>
+            <p className="text-sm text-muted-foreground">By combining advanced technology with rigorous testing and optimization, we deliver transformative security solutions at every stage of the journey.</p>
+          </GlassCard>
+          <GlassCard>
+            <h3 className="text-lg font-semibold mb-2 text-foreground">Work Culture & Team</h3>
+            <p className="text-sm text-muted-foreground mb-3">We cultivate a thriving work environment where growth is encouraged, collaboration reigns, and everyone feels valued. This investment in our people leads to better client outcomes and exceptional services that consistently exceed expectations.</p>
+            <h4 className="font-semibold mb-2 text-foreground">Seasoned Experts</h4>
+            <p className="text-sm text-muted-foreground">We attract and develop top talent—hiring for technical expertise, critical thinking, and communication skills to give you a competitive advantage.</p>
+          </GlassCard>
+        </div>
+      </SectionWrapper>
+
       {/* Team */}
-      <SectionWrapper muted>
+      {/* <SectionWrapper muted>
         <SectionTitle title="Our Team" subtitle="Security experts dedicated to protecting your business" />
         <div className="grid md:grid-cols-3 gap-6">
           {teamMembers.map((member) => (
@@ -180,20 +202,25 @@ export default function AboutPage() {
             </GlassCard>
           ))}
         </div>
-      </SectionWrapper>
+      </SectionWrapper> */}
 
       {/* CTA */}
       <SectionWrapper>
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-foreground">Ready to Get Secure?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Get a free security assessment and see how Cynsor can protect your business from cyber threats.
-          </p>
+          <p className="text-lg text-muted-foreground mb-4">Get a free security assessment and see how Cynsor can protect your business from cyber threats.</p>
+          <p className="text-lg text-muted-foreground mb-4">Simplify your security with our fully managed solution — Start your free trial today.</p>
+          <p className="text-sm text-muted-foreground mb-6 font-semibold">Enroll Now: <a href="mailto:contact@cynsor.com" className="underline text-primary">contact@cynsor.com</a></p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact">
               <Button size="lg">
                 Book An Appointment
                 <ArrowRightIcon className="ml-2" />
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="outline" size="lg">
+                Start Free Trial
               </Button>
             </Link>
             <Link href="/services">

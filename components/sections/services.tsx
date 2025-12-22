@@ -3,13 +3,15 @@ import Link from "next/link"
 import { SectionWrapper, SectionTitle } from "@/components/ui/section-wrapper"
 import { GlassCard } from "@/components/ui/glass-card"
 import { services } from "@/data/services"
-import { ArrowRightIcon, ShieldIcon, NetworkIcon, UsersIcon, SearchIcon } from "@/components/ui/icons"
+import { ArrowRightIcon, ShieldIcon, NetworkIcon, UsersIcon, SearchIcon, AlertIcon, ClipboardIcon } from "@/components/ui/icons"
 
 const iconMap: Record<string, React.ReactNode> = {
   network: <NetworkIcon className="w-6 h-6" />,
   shield: <ShieldIcon className="w-6 h-6" />,
   users: <UsersIcon className="w-6 h-6" />,
   search: <SearchIcon className="w-6 h-6" />,
+  alert: <AlertIcon className="w-6 h-6" />,
+  clipboard: <ClipboardIcon className="w-6 h-6" />,
 }
 
 export function ServicesSection() {

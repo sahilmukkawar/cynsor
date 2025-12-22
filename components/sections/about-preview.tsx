@@ -57,7 +57,7 @@ export function AboutPreviewSection() {
           {/* Contact CTA */}
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-6 border border-primary/20">
             <h4 className="font-semibold mb-2 text-foreground">Need Assistance?</h4>
-            <p className="text-2xl font-bold text-primary mb-2">+(888) 695-9859</p>
+            <p className="text-2xl font-bold text-primary mb-2"><a href="mailto:contact@cynsor.com" className="underline">contact@cynsor.com</a></p>
             <p className="text-sm text-muted-foreground">Our security experts are ready to help.</p>
           </div>
         </div>

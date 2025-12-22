@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/layout"
 import { SectionWrapper } from "@/components/ui/section-wrapper"
 import { GlassCard } from "@/components/ui/glass-card"
 import { ContactForm } from "@/components/contact-form"
-import { MailIcon, MapPinIcon, PhoneIcon, LinkedInIcon, TwitterIcon } from "@/components/ui/icons"
+import { MailIcon, MapPinIcon, LinkedInIcon, TwitterIcon } from "@/components/ui/icons"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -13,15 +13,9 @@ export const metadata: Metadata = {
 
 const contactInfo = [
   {
-    icon: <PhoneIcon className="w-6 h-6" />,
-    title: "Call Us",
-    details: "+(888) 695-9859",
-    subtext: "Available during business hours",
-  },
-  {
     icon: <MailIcon className="w-6 h-6" />,
     title: "Email Us",
-    details: "hello@cynsor.io",
+    details: "contact@cynsor.com",
     subtext: "We typically respond within 24 hours",
   },
   {
@@ -72,7 +66,11 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">{info.title}</h3>
-                      <p className="text-foreground">{info.details}</p>
+                      {info.title === 'Email Us' ? (
+                        <a href={`mailto:${info.details}`} className="text-primary hover:underline">{info.details}</a>
+                      ) : (
+                        <p className="text-foreground">{info.details}</p>
+                      )}
                       <p className="text-sm text-muted-foreground">{info.subtext}</p>
                     </div>
                   </GlassCard>

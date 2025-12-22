@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRightIcon, PhoneIcon } from "@/components/ui/icons"
+import { ArrowRightIcon, MailIcon } from "@/components/ui/icons"
 import Link from "next/link"
 
 export function CTASection() {
@@ -17,8 +17,8 @@ export function CTASection() {
                 Get a free quote and see how we can help protect your business.
               </p>
               <div className="flex items-center justify-center lg:justify-start gap-2 text-lg mb-8">
-                <PhoneIcon className="w-5 h-5 text-primary" />
-                <span className="font-semibold text-foreground">+(888) 695-9859</span>
+                <MailIcon className="w-5 h-5 text-primary" />
+                <a href="mailto:contact@cynsor.com" className="font-semibold text-foreground underline">contact@cynsor.com</a>
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <Link href="/contact">
@@ -48,12 +48,6 @@ export function CTASection() {
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-muted/50 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  disabled
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-muted/50 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
                   disabled
                 />
